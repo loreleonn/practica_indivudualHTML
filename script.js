@@ -1,4 +1,4 @@
-console.log("JS cargado ✅");
+console.log("JS cargado"); // si funciona, deja el dom en paz lorena 
 const contenedor = document.getElementById("cajas-novedades");
 const btnIzq = document.querySelector(".btn-carrusel.izquierda");
 const btnDer = document.querySelector(".btn-carrusel.derecha");
@@ -9,9 +9,10 @@ console.log("btnDer:", btnDer);
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* =====================
-     MENÚ HAMBURGUESA
-  ===================== */
+//menu 
+
+
+
   const menuBtn = document.querySelector('.img-menu');
   const menu = document.getElementById('menu');
 
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //carrusel 
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("JS cargado ✅");
+  
 
   const carrusel = document.querySelector(".carrusel");
   const contenedor = carrusel.querySelector(".contenedor-cajas1");
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(contenedor, btnIzq, btnDer);
 
   let index = 0;
-  const itemWidth = 320; // 300 + gap
+  const itemWidth = 320; 
 
   btnDer.addEventListener("click", () => {
     index++;
