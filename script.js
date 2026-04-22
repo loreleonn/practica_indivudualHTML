@@ -1,4 +1,17 @@
+console.log("JS cargado ✅");
+const contenedor = document.getElementById("cajas-novedades");
+const btnIzq = document.querySelector(".btn-carrusel.izquierda");
+const btnDer = document.querySelector(".btn-carrusel.derecha");
+
+console.log("contenedor:", contenedor);
+console.log("btnIzq:", btnIzq);
+console.log("btnDer:", btnDer);
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* =====================
+     MENÚ HAMBURGUESA
+  ===================== */
   const menuBtn = document.querySelector('.img-menu');
   const menu = document.getElementById('menu');
 
@@ -7,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       menu.classList.toggle('activo');
     });
-+
+
     document.addEventListener('click', (e) => {
       if (
         menu.classList.contains('activo') &&
@@ -18,4 +31,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  //carrusel 
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("JS cargado ✅");
+
+  const carrusel = document.querySelector(".carrusel");
+  const contenedor = carrusel.querySelector(".contenedor-cajas1");
+  const btnIzq = carrusel.querySelector(".btn-carrusel.izquierda");
+  const btnDer = carrusel.querySelector(".btn-carrusel.derecha");
+
+  console.log(contenedor, btnIzq, btnDer);
+
+  let index = 0;
+  const itemWidth = 320; // 300 + gap
+
+  btnDer.addEventListener("click", () => {
+    index++;
+    contenedor.style.transform = `translateX(${-index * itemWidth}px)`;
+  });
+
+  btnIzq.addEventListener("click", () => {
+    index--;
+    if (index < 0) index = 0;
+    contenedor.style.transform = `translateX(${-index * itemWidth}px)`;
+  });
+});
+
 });
