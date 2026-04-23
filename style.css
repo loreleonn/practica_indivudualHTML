@@ -77,22 +77,22 @@ body {
   padding: 20px;
 }
 
-.titulo-novedades{
+.best-sellers {
+  background-color: var(--bg3); 
+  padding: 20px;
+}
+
+
+.titulos {
   color: var(--txt2);
   font-size: 40px;
   margin-bottom: 15px;
   font-family: var(--font);
 }
-.titulo-best-sellers {
-  color: var(--txt1);
-  font-size: 40px;
-  margin-bottom: 15px;
-  font-family: var(--font);
-}
 
 
 
-.contenedor-cajas1, .contenedor-cajas2 {
+.contenedor-novedades, .contenedor-best-sellers {
   display: flex;
   flex-wrap: nowrap;          
   gap: 20px;
@@ -106,22 +106,22 @@ body {
   scrollbar-width: none;      
 }
 
-.contenedor-cajas1::-webkit-scrollbar {
+.contenedor-portadas-novedades::-webkit-scrollbar, .contenedor-portadas-best-sellers::-webkit-scrollbar {
   display: none;             
 }
-.caja1, .caja2 {
+.portada{
   min-width: 300px;
   flex-shrink: 0;
 }
 
-.imagen-caja1,.imagen-caja2 {
+.imagen-portadas {
   width: 300px;
   height: 300px;
   background-color: var(--bg2); 
   box-shadow: 2px 2px 8px var(--bg2);    
 }
 
-.texto1-caja1 {
+.texto1{
   color: var(--txt2);
   margin-top: 8px;
   font-size: 30px;
@@ -130,7 +130,7 @@ body {
   padding: 5px;
 
 }
-.texto2-caja1 {
+.texto2 {
   color: var(--txt2);
   font-size: 20px;
   font-family: var(--font);
@@ -139,27 +139,9 @@ body {
   padding: 0;
 }
 
-.best-sellers {
-  background-color: var(--bg1); 
-  padding: 20px;
-}
 
-.texto1-caja2{
-  color: var(--txt1);
-  margin-top: 8px;
-  font-size: 30px;
-  font-family: var(--font);
-  margin: 0; 
-  padding: 5px;
-}
-.texto2-caja2 {
-  color: var(--txt1);
-  font-size: 20px;
-  font-family: var(--font);
-  margin-bottom: 4px;
-  margin: 0; 
-  padding: 0;
-}
+
+
 
 .contenedor-banda{
   display: flex;
